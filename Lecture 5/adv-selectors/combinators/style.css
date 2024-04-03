@@ -1,0 +1,61 @@
+/* descendant operator */
+/* descendants are separated by space -> you can skip levels */
+
+/* #hey nav h1{
+    font-size: 100px;
+    color: rgb(48, 176, 255);
+    text-decoration: line-through;
+
+} */
+
+header h1 {
+    /*nav can be removed as well because h1 is descendant of header*/
+    font-size: 70px;
+    color: rgb(48, 176, 255);
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+/* ------------------------------------------------------------------------------- */
+/* CHILD COMBINATOR -> you cannot skip levels*/
+main>section>ul>.first {
+    color: pink;
+    font-size: 40px;
+
+}
+
+/* section>ul>.first {
+    color: pink;
+    font-size: 40px;
+
+} */
+
+/* ul>.vohra{
+    color: pink;
+    font-size: 40px;
+}*/
+
+/* --------------------------------------------------------------------------------- */
+/*  ADJACENT SIBLING -> used for only 1 after the h1 */
+/* Only neeche wale not upar wale */
+/* '+' used for adjacent sibling */
+main article h1+p {
+    color: red;
+    text-decoration: double;
+    font-size: 35px;
+
+}
+
+/* --------------------------------------------------------------------------------- */
+/* GENERAL SIBLING-> used for all after the heading h1 */
+/* neeche wale saare */
+main article h1~p {
+    color: rgb(255, 0, 149);
+    text-decoration: double;
+    font-size: 20px;
+
+}
+
+
+

@@ -1,0 +1,14 @@
+/* CLASS SELECTOR */
+.tan{
+    color:burlywood;
+}
+
+/* ID SELECTOR */
+#tanisha{
+    color:green;
+}
+
+/* ELEMENT SELECTOR */
+h1{
+    color:cadetblue;
+}

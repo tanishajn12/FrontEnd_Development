@@ -1,0 +1,12 @@
+p{
+    /* properties -> key: value */
+    color:rgb(0, 145, 255);
+    background-color: rgb(255, 254, 195);
+    font-size: 20px;
+}
+
+h1{
+    font-size: 50px;
+    color:rgb(255, 47, 47);
+}
+

@@ -1,0 +1,32 @@
+/* rgb */
+h1{
+    color:rgb(123,34,100);
+}
+
+/* rgba : a-> alpha channel/ opacity */
+h2{
+    color: rgba(154,12,45,0.5)
+}
+
+/* hexadecimal */
+h3{
+    color:#0f6b95; /*rrggbb*/
+}
+
+p{
+    color:#ff0000;
+}
+
+/* p{
+    color:#ff000000;
+    opacity: 00 
+} */
+
+p{
+    color:#ff0000ff;
+    /* last 2 ff: full opacity */
+    /* ff->1 , 00->0 */
+}
+
+
+

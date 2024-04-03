@@ -1,0 +1,41 @@
+/* ELEMENT SELECTOR */
+h1{
+    color: red;
+}
+h2{
+    font-size: 50px;
+}
+/* ID SELECTOR */
+#tanisha{
+    font-size: 50px;
+    color: rgb(255, 124, 233);
+    text-decoration: underline;
+    background-color: rgb(195, 255, 255);
+}
+/* CLASS SELECTOR */
+.jain {
+    font-size: 20px;
+    color: rgb(0, 149, 255);
+    text-decoration:underline;
+    background-color: greenyellow;
+
+}
+
+/*ATTRIBUTE SELECTOR*/
+a[href="http://google.com"]{
+    color:rgb(255, 129, 129);
+    font-size: 50px;
+    text-decoration:double;
+}
+input[type="password"] {
+    color: green;
+    font-size:larger;
+}
+
+/*UNIVERSAL SELECTOR*/
+*{
+    border: 5px solid lightcyan; /*--> width type color */
+}
+
+
+

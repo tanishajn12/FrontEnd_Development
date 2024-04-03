@@ -1,0 +1,77 @@
+div{
+    height:200px;
+    width:200px;
+    border:2px solid black;
+    background-color:burlywood;
+
+}
+
+/* HOVER STATE */
+div:hover{
+    cursor:pointer;
+    background-color: aquamarine;
+    border: 10px solid pink;
+}
+
+/* FOCUS STATE */
+input{
+    background-color: grey ;
+    font-size: 30px;
+}
+
+input:hover{
+    background-color: burlywood;
+}
+
+input:focus {
+    background-color: palevioletred;
+    font-size: 60px;
+}
+
+
+/* ACTIVE STATE */
+div:active{
+    background-color: violet;
+    border: 10px solid yellow;
+}
+
+/* first child */
+li:first-child {
+    color:chocolate;
+    font-size: 40px;
+    border:5px solid red;
+}
+
+/* last child */
+li:last-child {
+    font-size: 70px;
+    background-color: chartreuse;
+}
+
+/* nth--of--type */
+/* li:nth-of-type(4){
+    color:blueviolet;
+    font-size: 30px;
+} */
+
+/* li:nth-of-type(7){
+    color:fuchsia;
+} */
+
+li:nth-of-type(2n+1){
+    color:red;
+    font-size: 30px;
+}
+
+li:nth-of-type(2n){
+    color:blue;
+    font-size: 20px;
+}
+
+section div:nth-of-type(2) {
+    background-color: aqua;
+    height:100px;
+    width:100px;
+    border: 1px solid black;
+}
+
