@@ -1,21 +1,21 @@
-// var username="samarth";
-// var person= {
-//     email: "sam@gmail.com",
-//     password : "samarth"
-// }
-// console.log(username)
+var username="samarth";
+var person= {
+    email: "sam@gmail.com",
+    password : "samarth"
+}
+console.log(username)
 
 
 // ------------------
 
-// var username = "tanisha";
-// function sum() {
-//     var num1 = 10;
-//     var num2 = 20;
-//     return num1+num2;
-// }
-// sum();
-// console.log(username);
+var username = "tanisha";
+function sum() {
+    var num1 = 10;
+    var num2 = 20;
+    return num1+num2;
+}
+sum();
+console.log(username);
 
 
 var naam="samarth"

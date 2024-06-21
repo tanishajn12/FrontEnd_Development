@@ -9,18 +9,20 @@
 // sum("tanisha","jain")
 // sum(true, false)
 
+//Higher Order Function 
+// function a(fn) { 
+//     console.log("I am A")
+//     fn(); //calling is important for callback function
+//     //fn is an entire function
+// }
 
-function a(fn) { // hof
-    console.log("I am A")
-    fn(); //calling is important for callback function
-}
+// function b() { //callback function
+//     console.log("I am B")
+// }
 
-function b() { //CALLBACK function
-    console.log("I am B")
-}
+// a(b); //function passed as argument
 
-a(b);
-
+// 
 //unethical way of running code
 
 // function a(fn) {
@@ -63,39 +65,39 @@ temp();
 
 // ---------------USE CASE----------------
 
-// function getString(arr){
-//     let res=[];
-//     for (let item of arr) {
-//         if(typeof(item)==='string'){
-//             res.push(item)
-//         }
+function getString(arr){
+    let res=[];
+    for (let item of arr) {
+        if(typeof(item)==='string'){
+            res.push(item)
+        }
         
-//     }
-//     return res;
+    }
+    return res;
 
-// }
+}
 
-// function getNumber(arr){
-//     let res=[];
-//     for (let item of arr) {
-//         if(typeof(item)==='number'){
-//             res.push(item)
-//         }
+function getNumber(arr){
+    let res=[];
+    for (let item of arr) {
+        if(typeof(item)==='number'){
+            res.push(item)
+        }
         
-//     }
-//     return res;
-// }
+    }
+    return res;
+}
 
-// function getBool(arr){
-//     let res=[];
-//     for (let item of arr) {
-//         if(typeof(item)==='boolean'){
-//             res.push(item)
-//         }
-//     }
-//     return res;
+function getBool(arr){
+    let res=[];
+    for (let item of arr) {
+        if(typeof(item)==='boolean'){
+            res.push(item)
+        }
+    }
+    return res;
 
-// }
+}
 
 
 let arr=['sam',100,'book',true, 400, false]

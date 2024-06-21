@@ -1,5 +1,5 @@
-// ---------HOISTING 1--------------------
-//accessing the variable/func before its declaration
+// // ---------HOISTING 1--------------------
+// //accessing the variable/func before its declaration
 
 // b(); //hoisting - yes
 // console.log(a); //yes hoisting
@@ -23,15 +23,15 @@
 
 //-------------------------------------------------------------
 
-// let a; //declare -> js engine -> undefined --> let a-> undefiend
-// console.log(a); //no hoisting: because variable is defined already
-// a=100; //reinitialise
+let a; //declare -> js engine -> undefined --> let a-> undefiend
+console.log(a); //no hoisting: because variable is defined already
+a=100; //reinitialise
 
-// function b() {
-//     console.log("Honesty is best policy")
-// }
+function b() {
+    console.log("Honesty is best policy")
+}
 
-// b(); 
+b(); 
 
 //----------------------------------------------------------
 // var a; //declare -> js engine -> undefined --> let a-> undefiend
@@ -45,7 +45,7 @@
 // b(); 
 
 //-----------------------------------------------------------
-//in case of const declaration -> cannot reinitialize the variable
+// in case of const declaration -> cannot reinitialize the variable
 
 // const a=100; //declare -> js engine -> undefined --> let a-> undefiend
 // console.log(a); //no hoisting

@@ -8,16 +8,16 @@
 
 //--------------------------------
 
-function outer() {
-    var b=10;
+// function outer() {
+//     var b=10;
 
-    inner() ;
-    function inner() {
-        console.log(b);
-    }  
-}
+//     inner() ;
+//     function inner() {
+//         console.log(b);
+//     }  
+// }
 
-outer();
+// outer();
 
 //-----------------------------------
 
@@ -120,6 +120,38 @@ outer();
 
 // outer();
 
+//-------------------------------
+// function outer() {
+//     inner();
+//     var a =10;
+//     console.log(a);
+
+//     function inner (){
+//         console.log(a)
+//         var a=200;
+//         console.log(a)
+//     }
+//     console.log(a)
+// }
+
+// outer();
+
+//-----------------------------
+// function outer() {
+
+//     var a =10;
+//     console.log(a);
+
+//     if(true){
+//         console.log(a)
+//         var a=200;
+//         console.log(a)
+//     }
+//     console.log(a)
+// }
+
+// outer();
+
 //---------------------------------
 // function outer() {
 //     let a=10;
@@ -127,7 +159,7 @@ outer();
 
 
 //     if(true){
-//         console.log(b);
+//         console.log(a);
 //         let a=200;
 //         console.log(a);
 //     }
@@ -138,25 +170,25 @@ outer();
 // outer();
 
 //------------------------------------
-function outer() {
-    let a=10;
-    console.log(a);
+// function outer() {
+//     let a=10;
+//     console.log(a);
 
 
-    if(true){
-        console.log(b);
-        a=200;
-        console.log(a);
-    }
+//     if(true){
+//         console.log(a);
+//         a=200;
+//         console.log(a);
+//     }
 
-    console.log(a);
-}
+//     console.log(a);
+// }
 
-outer();
+// outer();
 
 //--------------------------------------------
 
-//function outer() {
+// function outer() {
 //     var a =10;
 //     console.log(a);
 
@@ -174,7 +206,7 @@ outer();
 //---------------------------------------------
 
 
-//function outer() {
+// function outer() {
 //     let a =10;
 //     console.log(a);
 
@@ -191,27 +223,32 @@ outer();
 
 //-----------------------------------------------
 
+// function outer() {
+//     let a =10;
+//     console.log(a);
+    
+//     {
+//         var a=200;
+//         console.log(a)
+//     }
+    
+//     console.log(a)
+// }
+// outer();
+
+// //---------------------------------------------------
+
+
 function outer() {
+
     let a =10;
     console.log(a);
-    {
-        var a=200;
-        console.log(a)
-    }
-    console.log(a)
-}
-outer();
 
-//---------------------------------------------------
-
-
-function outer() {
-    let a =10;
-    console.log(a);
     {
         let a=200;
         console.log(a)
     }
+    
     console.log(a)
 }
 outer();
