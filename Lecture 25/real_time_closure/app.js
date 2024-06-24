@@ -7,12 +7,15 @@ function counter(){
        getCount: function(){
         return count;
        },
+       
        increment: function(){
         count++;
        },
+       
        decrement: function(){
         count--
        },
+       
        reset: function(){
         count=0
        }
@@ -20,14 +23,9 @@ function counter(){
 
 }
 
-let counter1=counter(); //-> way 1
-// let counter1={  //-> way 2
-//     getCount: function(){
-//         return count;
-//     }
-// }
+//way 1
+// let counter1=counter(); 
 
-// console.log(count); //count is not defined, error generated
 
 // console.log(counter1.getCount());  //0
 // counter1.increment(); // ->1
@@ -45,6 +43,9 @@ let counter1=counter(); //-> way 1
 // console.log(counter1.getCount()); //0
 
 // -------------------------------------------------
+
+let counter1=counter(); 
+// console.log(counter1);
 
 counter1.increment(); //does not return anything
 counter1.increment();

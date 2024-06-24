@@ -1,14 +1,14 @@
 
-// array
+// // array
 // let worldCup= ['India','Pakistan','Afghanistan','Australia','New Zealand']
 
-//1. for each method() -> method which accepts a callback function
+// // 1. for each method() -> method which accepts a callback function
 
-// worldCup.forEach(); ->syntax 
-// forEach : Higher order function
+// // worldCup.forEach(); //->syntax : forEach works on array
+// // forEach : Higher order function
 
-// worldCup.forEach(function(item) { //item -> just a regular variable
-//     console.log(item);
+// worldCup.forEach(function(sachin) { //item -> just a regular variable
+//     console.log(sachin);
 // })
 
 // worldCup.forEach(function(item,index) { //item -> just a regular variable
@@ -20,19 +20,21 @@
 // ------------------------------------------------------------------
 // 2. map() -> ,method
 // let worldCup= ['India','Pakistan','Afghanistan','Australia','New Zealand']
-// let numbers=[10,20,30,40,50]
 
 
-// worldCup.map()  -> syntax -> Higher Order function
+// // worldCup.map()  -> syntax -> Higher Order function
 
 // let newArray= worldCup.map(function(item){  //returns new array
 //     return item.toUpperCase();
 // })
+
+
 // console.log(worldCup)
 // console.log(newArray)
 
 // -------------------------------------------------------------------
 
+// let numbers=[10,20,30,40,50]
 // let newArray= numbers.map(function(item){  //returns new array
 //     return item*item;
 
