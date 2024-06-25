@@ -25,6 +25,62 @@
 //Class Syntax
 // First letter of class should be capital
 
+// class Person {
+//     constructor(name, age) {
+//         this.username = name;
+//         this.userage = age;
+//     }
+
+//     printName() {
+//         console.log(`my name is ${this.username}`)
+//     }
+
+//     getFullName() {
+//         return (`name is ${this.username}`)
+//     }
+// }
+
+// let person2 = new Person('Tanisha',22);
+// console.log(person2);
+
+// --------------------------------------------------
+// not one of the good ways (but correct)
+// class Person {
+//     constructor(name, age) {
+//         this.username = name;
+//         this.userage = age;
+//     }
+
+//     printName() {
+//         console.log(`my name is ${this.username}`)
+//     }
+
+//     getFullName() {
+//         return (`name is ${this.username}`)
+//     }
+// }
+
+// class Student {
+//     constructor(name, age) {
+//         this.username = name;
+//         this.userage = age;
+//     }
+
+//     printName() {
+//         console.log(`my name is ${this.username}`)
+//     }
+
+//     getFullName() {
+//         return (`name is ${this.username}`)
+//     }
+// }
+
+// let person2 = new Student('Anand', 23);
+// console.log(person2)
+
+
+// ------------------------
+
 class Person {
     constructor(name, age) {
         this.username = name;
@@ -40,10 +96,12 @@ class Person {
     }
 }
 
-let person2 = new Person('Tanisha',22);
-console.log(person2);
+class Student extends Person{
+    
+}
 
-
+let person2 = new Student('Anshika', 23);
+console.log(person2)
 
 
 
