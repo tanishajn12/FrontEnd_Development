@@ -97,11 +97,20 @@ class Person {
 }
 
 class Student extends Person{
+    constructor(naam, umar, rollNo) {
+        super(naam, umar);
+        this.rollno = rollNo;
+    }
+
+    printName() {
+        console.log(`kya hua ${this.username}`)
+    }
     
 }
 
-let person2 = new Student('Anshika', 23);
-console.log(person2)
+let person3 = new Student('Anshika', 20, 72);
+console.log(person3)
+console.log(person3.printName())
 
 
 
