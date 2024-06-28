@@ -3,13 +3,11 @@
 
 // function getData(cb){
 //     setTimeout(function(){
-//         // let data = "Hello my family"; //assumed ki server de rha hai
-
-//         // cb(data, null); //server decide krega
-//         cb(null);
-
-//     },4000)
+//         // let data = "Hello my family"; 
+//         cb(null); 
+//     } , 4000)
 // }
+
 
 // getData(function(data,error){
 //     if(error){
@@ -22,18 +20,17 @@
 //----------------------------------------
 // callback tackle -> promise -> contructor function
 
-// step 1
+// // step 1
 // let promise1= new Promise() //object creation -> constructor
 
-// ---------------------------------------------
-// step 2
+// // ---------------------------------------------
+// // step 2
 // let promise1= new Promise(function(){
 
 // })
+
 // --------------------------------------------
 // step 3
-
-
 
 let mypromise= new Promise(function(resolve, reject){
     
@@ -45,16 +42,15 @@ let mypromise= new Promise(function(resolve, reject){
         resolve(data); //complete promise
         reject(err) //break promise
 
-    },4000)
+    } , 4000)
 
 })
 
-// mypromise.then().catch()
+// // mypromise.then().catch()
 
 mypromise.then(function(data){ //accepts a cb function
     console.log(data,'resolve')
 })
-
 .catch(function(errr){
     console.log(errr,'reject')
 })
