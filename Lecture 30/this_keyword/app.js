@@ -3,7 +3,7 @@
 // regular function invocation
 
 //function inside object is called method
-//and use of this keyword inside function points to object
+//and use of this keyword inside that function points to object
 
 // let obj={
 //     number:200,
@@ -23,11 +23,11 @@
 // 1. in case of regular function calling-> this always points to the window object
 //window -> global object
 
-// eg.
+// // eg.
 // function hello(){
 //     console.log(this)
 // }
-//hello(); //direct function invocation
+// hello(); //direct function invocation
 
 //----------------------------------------------------
 // 2. method invocation
@@ -35,14 +35,15 @@
 // let obj={
 //     number: 200,
 //     fun: function(){
-//         console.log(this)
+//         console.log(this) //obj
 //     }
 // }
 
+// // function ki calling is dependent on object
 // obj.fun(); //method invocation
 
 // method invocation -> this always points to the object it is being called upon
-
+//------------------------------------------------------
 // eg:
 // let obj2= {
 //     a:100,
@@ -52,7 +53,7 @@
 // }
 
 // obj2.sam(); //method invocation
-
+//-------------------------------------------------------
 // eg2
 // let obj2= {
 //     a:100,
@@ -62,14 +63,14 @@
 // }
 
 // let b = obj2.sam; 
-// b(); //now it is direct function invocation -> windoe
+// b(); //now it is direct function invocation -> window
 
+//----------------------------------------------------------------
 // eg3
-
 // let obj3={
-//     a:10,
+//     a: 10,
 //     fn: function(){
-//         console.log(this);  //method invocation
+//         console.log(this);  //method invocation -> point to object
 //         function sam(){
 //             console.log(this); //direct function : window
 //         }
@@ -78,7 +79,10 @@
 // }
 // obj3.fn(); //method invocation
 
+//--------------------------------------------------------------
 // 3. Constructor invocation
+//contructor invocation -> 'this' always points to the newly created object
+
 // function CreateObj() {
 //     this.x=200;
 // }
@@ -90,20 +94,20 @@
 // 4. indirect invocation
 // call() and apply()
 
-let obj={
-    a:20,
-    fn: function(a,b,c){
-        console.log(this, a,b,c)
-    }
-}
+// let obj={
+//     a:20,
+//     fn: function(a,b,c){
+//         console.log(this, a,b,c)
+//     }
+// }
 
-let obj2= {
-    a:50
-}
+// let obj2= {
+//     a:50
+// }
 
 // obj.fn(1,2,3); //method invocation
-
 // obj.fn(); //direct calling
+
 // obj.fn.call(obj2) //this -> obj2 -> changes the context of this
 // obj.fn.call(obj2,1,2,3) //this -> obj2 -> changes the context of this
 
@@ -116,8 +120,9 @@ let obj2= {
 // obj.fn.call(obj2,1,2,3) //-> call syntax
 
 // //-----------------------------------
+// 4. indirect invocation
+// bind()
 
-// //bind
 // let obj3={
 //     fn: function(){
 //         console.log(this)
@@ -129,7 +134,7 @@ let obj2= {
 // console.log(myfun)
 // myfun();
 
- // -------------------------------------------------
+// -------------------------------------------------
 
 // let obj3 ={
 //     fn: function(){
@@ -141,7 +146,7 @@ let obj2= {
 //     console.log(this);
 // }
 
-// // f3();
+// fn3(); //this refers to window
 // let fn4= fn3.bind(100); //assign
 // fn4();
 
@@ -162,7 +167,7 @@ let obj2= {
 //         function sam(){
 //             console.log(this);
 //         }
-//         sam(); //direct calling
+//         sam(); //direct calling -> window
 //     }
 // }
 // obj5.fn();
@@ -170,7 +175,8 @@ let obj2= {
 //eg3
 // let obj5 = {
 //     fn: function(){
-//         console.log(this)
+
+//         //arrow function
 //         let sam=()=>{
 //             console.log(this); //obj 5
 //         }
@@ -180,11 +186,12 @@ let obj2= {
 // obj5.fn();
 
 // eg 4
+
 let obj5= {
     fn: ()=> {
-        console.log(this)
+        console.log(this) //this statement here will act like this of parent -> window
         let sam=()=> {
-            console.log(this);
+            console.log(this); 
         }
         sam();
     }
