@@ -4,7 +4,7 @@ let btnEl= document.querySelector('button');
 let list = document.querySelector('#list');
 
 
-btnEl.addEventListener('click', function(e){
+btnEl.addEventListener('click', function(event){
     let noteText=inpEl.value; //getter
 
     let li = document.createElement('li');
@@ -12,10 +12,11 @@ btnEl.addEventListener('click', function(e){
 
     list.appendChild(li);
 
-    inpEl.value= ""; //setter
+    //after adding the input, empty the input box
+    inpEl.value= ""; //setter 
 
-    li.addEventListener('click',(e)=>{
-        // e.target.remove(); //way 1
+    li.addEventListener('click',(event)=>{
+        // event.target.remove(); //way 1
         li.remove(); //way 2
     })
 })
