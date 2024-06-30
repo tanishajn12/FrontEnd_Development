@@ -1,15 +1,13 @@
-.hi {
+.class1{
+    color:red
+}
+
+.class2{
     border:2px solid black;
+
 }
 
-.bye{
-    background-color: aquamarine;
-}
-
-.sam{
-    text-decoration: line-through;
-}
-
-.tom{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.class3{
+    font-size: 60px;
+    text-decoration: underline;
 }

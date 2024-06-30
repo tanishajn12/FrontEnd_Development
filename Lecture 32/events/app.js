@@ -1,44 +1,54 @@
 
-// function handleClick(){
-//     console.log("hello bhai")
+//2nd way
+// let btn = document.querySelector('button');
+// btn.onclick = function() {
+//     console.log("hello tanisha")
 // }
 
-// function handleh1(){
-//     console.log("how are you")
+//3rd way
+// let btn = document.querySelector('button');
+// let fn = function() {
+//     console.log("web d padh lo")
 // }
 
+// btn.onclick = fn;
 
-// let btn=document.querySelector("#btn")
+// -------------------------------------------
+//interview question
+// let btn = document.querySelector('button');
+// function dsa() {
+//     console.log("data structures and algorithms")
+// }
 
-// btn.onclick=function() {
-//     console.log("baba bangali");
-// };
+// function webd() {
+//     console.log("web development")
+// }
 
+// btn.onclick = dsa
+// btn.onclick = webd
+// onclick does not allow multiple actions : gets overridden
 
-// btn.onclick=function(){
-//     console.log("moye moye");
-// };
-
-//onclick does not allow multiple actions : gets overridden\
-
+// ------------------------------------------
 
 //----------------ADD EVENT LISTENEERS---------------------
+// mutiple kaam
+
 // let btn=document.querySelector("#btn")
 
-// let f1=function(){
-//     console.log("hey ")
+// function dsa() {
+//     console.log("data structures and algorithms")
 // }
 
-// let f2=function(){
-//     console.log("i am good")
+// function webd() {
+//     console.log("web development")
 // }
 
-// btn.addEventListener('click',f1);
-// btn.addEventListener('click',f2);
+// btn.addEventListener('click',dsa);
+// btn.addEventListener('click',webd);
 
 
 // ---------------------------------------------------------
-let btn=document.querySelector("#btn");
+// let btn=document.querySelector("#btn");
 
 // btn.onclick=function(){
 //     let body=document.querySelector("body");
@@ -46,13 +56,13 @@ let btn=document.querySelector("#btn");
 
 // }
 
-let func=function(){
-    let body=document.querySelector("body");
-    body.style.backgroundColor="red";
+// let func=function(){
+//     let body=document.querySelector("body");
+//     body.style.backgroundColor="red";
 
-}
+// }
 
-btn.addEventListener('click',func);
+// btn.addEventListener('click',func);
 
 
 // 
