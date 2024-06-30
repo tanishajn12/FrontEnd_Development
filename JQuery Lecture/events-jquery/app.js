@@ -1,8 +1,8 @@
 
 
-$('button').click(function() {
-    console.log("hello");
-})
+// $('button').click(function() {
+//     console.log("hello");
+// })
 
 //querySelector All
 $('ul li').click(function(event){
@@ -26,3 +26,14 @@ $('button').on('click', function(){
 // ------------------------------------
 // effects
 
+$('#fadeIn').on('click', function(){
+    $('#container').fadeIn()
+})
+
+$('#fadeOut').on('click', function(){
+    $('#container').fadeOut()
+})
+
+$('#fadeToggle').on('click', function(){
+    $('#container').fadeToggle()
+})
